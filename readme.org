@@ -1,0 +1,14 @@
+Softmacs is a modern Lisp distribution that combines programming
+language theory & machine learning.
+
+Softmacs Lisp is based on [[https://web.cs.wpi.edu/~jshutt/kernel.html][John Shutt's Kernel]]: it uses the ~vau~
+operator to create /fexprs/, essentially first class macros. It also
+has delimited continuations, and primitives from synchronous reactive
+programming.
+
+With regards to machine learning, my current idea is to write neural
+sequence-to-sequence models in Lisp and apply them to Lisp tokens. I
+would like to be able to perform the entire machine learning workflow
+from within Softmacs. For example, Softmacs should be able to scrape
+web pages to collect a dataset, define models, train them, then deploy
+them in embedded apps like the browser or messaging clients.
